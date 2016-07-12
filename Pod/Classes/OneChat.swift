@@ -67,7 +67,7 @@ public class OneChat: NSObject {
 		sharedInstance.teardownStream()
 	}
 	
-	@objc public class func start(archiving: Bool = false, delegate: OneChatDelegate? = nil, completionHandler completion:OneChatAuthCompletionHandler) {
+	public class func start(archiving: Bool? = false, delegate: OneChatDelegate? = nil, completionHandler completion:OneChatAuthCompletionHandler) {
 		sharedInstance.setupStream()
 		
 		if archiving! {
